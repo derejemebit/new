@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Collaboration Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        .demo-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+        .demo-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .demo-steps {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .demo-steps h3 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+        .demo-steps ol {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        .demo-steps li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background: rgba(255, 215, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .main-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 20px 0;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .main-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1 class="demo-title">🚀 Real-Time Schedule Collaboration</h1>
+        
+        <div class="demo-steps">
+            <h3>✨ How to Test Real-Time Collaboration:</h3>
+            <ol>
+                <li>Open the main website: <span class="highlight">index.html</span></li>
+                <li>Open the same website in <span class="highlight">multiple browser tabs</span> or different devices</li>
+                <li>In one tab, click <span class="highlight">"የሳምንቱን ፕሮግራሞች ማስተካከያ"</span> (Edit Schedule)</li>
+                <li>Click on any time slot and change the activity</li>
+                <li>Watch the changes appear <span class="highlight">instantly</span> in all other tabs! 🎉</li>
+            </ol>
+        </div>
+
+        <a href="index.html" class="main-link">🌟 Open Main Website</a>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h4>Instant Sync</h4>
+                <p>Changes appear in real-time across all connected users</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">👥</div>
+                <h4>Multi-User</h4>
+                <p>Multiple people can view and edit simultaneously</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <h4>Web-Based</h4>
+                <p>Works on any device with a web browser</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔄</div>
+                <h4>Auto-Save</h4>
+                <p>All changes are automatically saved and synced</p>
+            </div>
+        </div>
+
+        <div class="demo-steps">
+            <h3>🔥 Firebase Setup Required:</h3>
+            <p>To enable real-time collaboration, you need to:</p>
+            <ol>
+                <li>Create a Firebase project at <a href="https://console.firebase.google.com" target="_blank" style="color: #ffd700;">console.firebase.google.com</a></li>
+                <li>Enable Realtime Database</li>
+                <li>Update <span class="highlight">firebase-config.js</span> with your config</li>
+                <li>Deploy to GitHub Pages</li>
+            </ol>
+            <p><strong>See SETUP.md for detailed instructions!</strong></p>
+        </div>
+    </div>
+</body>
+</html>
